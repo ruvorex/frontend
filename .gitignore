@@ -1,23 +1,51 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
 # production
 /build
+/dist
 
-# misc
-.DS_Store
+# IDE/editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# build logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local environment files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Typescript specific
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Jest testing framework
+/coverage
+
+# Next.js specific
+/.next/
+
+# Storybook
+/.storybook/
+
+# Cypress specific
+/cypress/videos/
+/cypress/screenshots/
+
+# Code quality
+.eslintcache
